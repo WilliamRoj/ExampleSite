@@ -21,7 +21,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/e2e-filters.js'
+        './test/specs/**/e2e-help.js'
     ],
     // Patterns to exclude.
     exclude: [
