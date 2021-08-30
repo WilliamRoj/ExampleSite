@@ -16,12 +16,17 @@ describe('E2E Test / logout flow', () => {
         $('#signin_button').waitForExist()
         $('#signin_button').click()
         $('#login_form').waitForExist()
-        $('#user_login').setValue('invalid')
-        $('#user_password').setValue('invalid')
+        $('#user_login').setValue('username')
+        $('#user_password').setValue('password')
         $('input[type="submit"]').click()
+        $('.nav-tabs').waitForExist()
     })
 
     it('Should logout from app', () => {
-        // TODO
+        $('.icon-user').waitForExist()
+        $('.icon-user').click()
+        $('#logout_link').waitForExist()
+        $('#logout_link').click()
+        $('#pages-nav').waitForExist()
     })
 })
